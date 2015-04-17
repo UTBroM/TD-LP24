@@ -39,6 +39,16 @@ public class GroupOfStudent {
 		return sum/nbStudents;
 	}
 	
+	public boolean addStudent(Students Std){
+		for(int i=0;i<students.length;i++){
+			if(students[i]==null){
+				students[i]=Std;
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
