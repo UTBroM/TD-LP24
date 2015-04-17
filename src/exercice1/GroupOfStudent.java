@@ -48,6 +48,27 @@ public class GroupOfStudent {
 		}
 		return false;
 	}
+
+	public GroupOfStudent getStudents(int age) {
+		int size=0;
+		int i=0;
+		while(students[i]!=null) {
+			if(students[i].getAge()==age) {
+				size++;
+				i++;
+			}
+		}
+		
+		GroupOfStudent group = new GroupOfStudent(size,"Same age");
+		i=0;
+		while(i<students.length && students[i]!=null) {
+			if(students[i].getAge()==age) {
+				group.addStudent(students[i]);
+				i++;
+			}
+		}
+		return group;
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
