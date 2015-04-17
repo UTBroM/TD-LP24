@@ -5,22 +5,23 @@ public class Students {
 	private String lastname;
 	private String firstname;
 	private int age;
-	public Student (String lastname, String firstname, int age){
+	
+	public Students (String lastname, String firstname, int age){
 		this.lastname = lastname;
 		this.firstname = firstname;
 		this.age = age;
 	}
 
 	public int getAge() {
-		return this.Age;
+		return this.age;
 	}
 	
 	public String getLastName() {
-		return this.LastName;
+		return this.lastname;
 	}
 	
 	public void setAge(int age) {
-		this.Age=age;
+		this.age=age;
 	}
 
 }
