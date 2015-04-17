@@ -23,6 +23,22 @@ public class GroupOfStudent {
 		return null;
 	}
 	
+	public float getAverage(){
+		float sum = 0;
+		int nbStudents = 0;
+		for(int i=0;i<students.length;i++){
+			if(students[i]!=null){
+				nbStudents++;
+				sum+=students[i].getAge();
+			}
+
+		}
+		if(nbStudents==0){
+			return 0;
+		}
+		return sum/nbStudents;
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
